@@ -15,7 +15,11 @@
         "groups": [
           {
             "group": "Getting Started",
-            "pages": ["index", "quickstart", "how-it-works"]
+            "pages": [
+              "index",
+              "quickstart",
+              "how-it-works"
+            ]
           },
           {
             "group": "Creating Your App",
