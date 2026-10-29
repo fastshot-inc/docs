@@ -45,6 +45,7 @@
             "pages": [
               "integrations/supabase-backend",
               "integrations/monetization",
+              "integrations/push-notifications",
               "integrations/github-integration"
             ]
           },

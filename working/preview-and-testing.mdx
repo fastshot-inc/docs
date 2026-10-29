@@ -10,7 +10,7 @@ A live preview of your app appears in the right panel of the editor. It updates 
 The preview shows your app running through a React Native web build. It's a good approximation, but some elements may look slightly different than on a real device.
 
 <Warning>
-  The browser preview cannot simulate native device features like camera, biometrics, NFC, Bluetooth, push notifications, or native date pickers. Use a physical device for testing these features.
+  The browser preview cannot simulate native device features like camera, biometrics, NFC, Bluetooth, or native date pickers. It shows test [push notifications](/integrations/push-notifications) as a labelled banner instead of a real one. Use a physical device for testing these features.
 </Warning>
 
 ## Testing on your phone
@@ -36,7 +36,7 @@ For the most accurate experience, test on a physical device:
 | Forms and inputs | Yes | Yes |
 | Camera | No | Yes |
 | Biometrics | No | Yes |
-| Push notifications | No | Yes |
+| Push notifications | Simulated | Yes |
 | Native date pickers | No | Yes |
 | Platform-specific UI | Approximate | Accurate |
 
