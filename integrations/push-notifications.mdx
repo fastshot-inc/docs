@@ -23,11 +23,16 @@ When you send a test, it appears in the preview as a banner labelled **Preview**
 
 ## Getting them on your phone
 
-Notifications reach phones that have your installed app, not the Fastshot preview apps.
+Notifications reach your app when it's installed on a phone. Fastshot Companion and the preview don't get them.
 
 <Steps>
   <Step title="Install your app">
-    Install a test build of your app on your phone. See [publishing](/publishing/app-publishing-overview).
+    In the **Notifications** tab, choose **Install on Android** or **Install on iPhone**:
+
+    - **Android:** build your app in **Publish** and install the APK on your phone.
+    - **iPhone:** publish your app to TestFlight from **Publish** and install it from there. This needs an Apple Developer account.
+
+    A copy installed before you added notifications won't get them: build your app again and install the new one. See [publishing](/publishing/app-publishing-overview).
   </Step>
   <Step title="Add your phone">
     In the **Notifications** tab, choose **Add my phone**, then **Show my code**, and scan the code with your phone. The code works for 15 minutes; choose **Get a new code** for another.
@@ -40,6 +45,8 @@ Notifications reach phones that have your installed app, not the Fastshot previe
 ## Messaging everyone
 
 Under **Message everyone**, write a title and a message, and optionally the screen it opens. Choose **Now** or **Later**, check the preview of the notification, then send. It goes to everyone who allowed notifications.
+
+People get notifications once they have a version of your app that includes them. If your app is already in the App Store or Google Play, publish an update after adding notifications.
 
 - Turn on **This is an offer** for promotions. Offers only reach people who said yes to offers in your app, as Apple requires.
 - You can message everyone up to 3 times a day.
