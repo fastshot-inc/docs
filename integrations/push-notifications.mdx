@@ -1,0 +1,75 @@
+---
+title: "Push notifications"
+description: "Send notifications to people's phones from your app"
+---
+
+## Overview
+
+Your app can send notifications to people's phones on iPhone and Android: a new message, a booking reminder, an order update or news you want everyone to see. Fastshot sends them through its own push service, so there's no account to create and nothing to connect.
+
+## Adding notifications
+
+Ask the AI for what you want, for example:
+
+- "Notify people when they get a new message"
+- "Remind customers an hour before their booking"
+- "Let me send news to everyone who uses the app"
+
+You can also open the **Notifications** tab in the editor and choose **Add notifications to my app**. The AI adds notifications to your app and asks people for permission at a moment that makes sense, never as soon as the app opens. Your app keeps working for people who say no.
+
+## Trying them in the preview
+
+When you send a test, it appears in the preview as a banner labelled **Preview** at the top of your app. Tapping it opens the screen the notification points to, the same as on a phone. The preview only simulates the notification: it doesn't reach any phone.
+
+## Getting them on your phone
+
+Notifications reach your app when it's installed on a phone. Fastshot Companion and the preview don't get them.
+
+<Steps>
+  <Step title="Install your app">
+    In the **Notifications** tab, choose **Install on Android** or **Install on iPhone**:
+
+    - **Android:** build your app in **Publish** and install the APK on your phone.
+    - **iPhone:** publish your app to TestFlight from **Publish** and install it from there. This needs an Apple Developer account.
+
+    A copy installed before you added notifications won't get them: build your app again and install the new one. See [publishing](/publishing/app-publishing-overview).
+  </Step>
+  <Step title="Add your phone">
+    In the **Notifications** tab, choose **Add my phone**, then **Show my code**, and scan the code with your phone. The code works for 15 minutes; choose **Get a new code** for another.
+  </Step>
+  <Step title="Send a test">
+    Write a title and a message under **Send a test** and choose **Send to my phone**. Tests go to the phones you added and to the preview.
+  </Step>
+</Steps>
+
+## Messaging everyone
+
+Under **Message everyone**, write a title and a message, and optionally the screen it opens. Choose **Now** or **Later**, check the preview of the notification, then send. It goes to everyone who allowed notifications.
+
+People get notifications once they have a version of your app that includes them. If your app is already in the App Store or Google Play, publish an update after adding notifications.
+
+- Turn on **This is an offer** for promotions. Offers only reach people who said yes to offers in your app, as Apple requires.
+- You can message everyone up to 3 times a day.
+- A scheduled message can be cancelled under **Recent** until it goes out.
+
+## Notifications your app sends on its own
+
+When your app has a [Supabase backend](/integrations/supabase-backend), the AI can make it send notifications when something happens: a new message for the other people in a chat, an order or booking that changes, a reminder before an appointment. These show as **Automatic** under **Recent**, with how many were sent and opened.
+
+## iPhone and Android setup
+
+- **Android** is set up for you.
+- **iPhone** needs a push key in your own Apple developer account. Fastshot creates it when you sign in with your Apple account, the same sign-in you use to publish. If you'd rather use your own key, choose **Upload a push key** in the **Notifications** tab.
+
+The **Notifications** tab shows when each platform is ready.
+
+## Limits
+
+| Plan | Notifications a month |
+|------|----------------------|
+| Free | 1,000 |
+| Starter, Beginner | 10,000 |
+| Pro | 100,000 |
+| Scale | 1,000,000 |
+
+Tests don't count. **This month** in the **Notifications** tab shows how many you've sent.
